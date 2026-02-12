@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jade Bianca Portillo">
+    <meta http-equiv="refresh" content="1800">
+    <title>Jade Bianca</title>
+    <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="MEDIAS/icon.png" type="image/x-icon">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #4A2166;
+            padding: 20px 70px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            height: 58px;
+        }
+
+        .logo img {
+            height: 58px;
+            vertical-align: middle;
+        }
+
+        .logo-text {
+            font-family: 'Le Jour Serif','Playfair Display', serif;
+            font-size: 30px;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 58px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 8px 25px;
+            border-radius: 30px;
+            display: block;
+            line-height: 42px;
+        }
+
+        .hero {
+            background-image: url('MEDIAS/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 10px 0px;
+        }
+
+        .blogs {
+            padding: 80px 0;
+            text-align: center;
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .blog-link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .box {
+            background: #FFFFFF;
+            width: 380px;
+            border-radius: 15px;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 25px;
+        }
+
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .blog-content { 
+            padding: 20px 25px; 
+        }
+
+        .blog-category {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #4A2166;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .blog-content h2 {
+            font-size: 22px;
+            color: #371F76;
+            margin: 0 0 45px 0;
+            line-height: 1.4;
+            height: 55px; 
+            vertical-align: middle;
+
+        }
+
+        .blog-description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: #60327a;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            height: 75px;
+            text-align: justify;
+        }
+
+        .read-more-btn {
+            color: #4A2166;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #4A2166;
+            color: #FFFFFF;
+            padding: 30px 70px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer-logo {
+            float: left;
+            font-family: 'Le Jour Serif', serif;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            float: right;
+            line-height: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="MEDIAS/logo.png" alt="JADE BIANCA">
+            <div class="logo-text">JADE BIANCA</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="goals.html">Goals</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h3>Latest Stories</h3>
+        <h1>Featured Blogs</h1>
+    </div>
+
+    <div class="blogs">
+        <a href="STORIES/blog1.html" class="blog-link">
+            <div class="box">
+                <img src="MEDIAS/blog1.png" alt="HTML CSS Journey">
+                <div class="blog-content">
+                    <p class="blog-category">Tech</p>
+                    <h2>My First Experience with HTML and CSS</h2>
+                    <p class="blog-description">My journey in learning HTML and CSS and how it helped me grow in confidence, creativity, and patience.</p>
+                    <p class="read-more-btn"><b>Read More &rarr;</b></p>
+                </div>
+            </div>
+        </a>
+
+        <a href="STORIES/blog2.html" class="blog-link">
+            <div class="box">
+                <img src="MEDIAS/blog2.png" alt="Self Love">
+                <div class="blog-content">
+                    <p class="blog-category">Personal</p>
+                    <h2>Fill Up Your Own Cup and Let Them Fall in Love With the Overflow</h2>
+                    <p class="blog-description">Learning to choose myself first, healing from the past, and learning to love myself without guilt.</p>
+                    <p class="read-more-btn"><b>Read More &rarr;</b></p>
+                </div>
+            </div>
+        </a>
+
+        <a href="STORIES/blog3.html" class="blog-link">
+            <div class="box">
+                <img src="MEDIAS/blog3.png" alt="Career Growth">
+                <div class="blog-content">
+                    <p class="blog-category">Career</p>
+                    <h2>Trusting Myself: The Key To Building a Meaningful Career</h2>
+                    <p class="blog-description">Trusting myself, learning through challenges, and building a meaningful future one step at a time.</p>
+                    <p class="read-more-btn"><b>Read More &rarr;</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="MEDIAS/logo.png" alt="JADE BIANCA">
+                <strong>JADE BIANCA</strong>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Jade Bianca Portillo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
