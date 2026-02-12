@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jade Bianca Portillo">
+    <meta http-equiv="refresh" content="1800">
+    <title>Jade Bianca</title>
+    <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="MEDIAS/icon.png" type="image/x-icon">
+<style type="text/css">
+    body {
+        background-color: #FFFFFF;
+        font-family: 'Playfair Display', Georgia, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #4A2166;
+        padding: 20px 70px;
+        overflow: hidden;
+    }
+
+    .logo {
+        float: left;
+        height: 58px;
+    }
+
+    .logo img {
+        height: 58px;
+        vertical-align: middle;
+    }
+
+    .logo-text {
+        font-family: 'Le Jour Serif','Playfair Display', serif;
+        font-size: 30px;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 58px;
+    }
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        float: right;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 8px 25px;
+        border-radius: 30px;
+        display: block;
+        line-height: 42px;
+        transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        background: #FFFFFF;
+        color: #371F76;
+    }
+
+    .hero {
+        background-image: url('MEDIAS/hero.png');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .hero h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin: 10px 0;
+    }
+
+    .hero p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        margin-top: 5px;
+    }
+
+    .about-me {
+        display: inline-block;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        margin: 10px;
+        background-color: #FFFFFF;
+        color: #4A2166;
+    }
+
+
+    .about-me:hover {
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+
+    .me {
+        padding: 80px 100px;
+        text-align: center;
+    }
+
+    .vid {
+        display: inline-block;
+        width: 35%;
+        vertical-align: middle;
+        margin-right: 30px;
+    }
+
+    .vid video {
+        width: 100%;
+        max-width: 380px; 
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        background-color: #000;
+    }
+
+    .me-text {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .me h3 {
+        color: #4A2166;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 550;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .me h1 {
+        font-size: 45px;
+        color: #371F76;
+        margin: 0 0 20px 0;
+    }
+
+    .me p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #6C3A8A;
+        text-align: justify;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+    .me-btn {
+        display: inline-block;
+        padding: 12px 35px;
+        background-color: #371F76;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 25px;
+        transition: 0.3s ease;
+        border: 2px solid #371F76;
+    }
+
+    .me-btn:hover {
+        background-color: #ffffff;
+        color: #371F76;
+    }
+
+    .life {
+        padding: 100px 0;
+        text-align: center;
+        background-color: #f7f5ff;
+    }
+
+    .life h3 {
+        color: #4A2166;
+        font-weight: 550;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .life h1 {
+        font-size: 45px;
+        color: #371F76;
+        margin: 10px 0;
+    }
+
+    .life p {
+        font-family: 'Poppins', sans-serif;
+        color: #6C3A8A;
+        margin-bottom: 50px;
+    }
+
+    .pages {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .box {
+        background: #FFFFFF;
+        width: 260px;
+        height: 280px;
+        border-radius: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px;
+        padding: 40px 20px;
+        text-decoration: none;
+        box-sizing: border-box;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border: 2px solid transparent;
+    }
+
+    .box:hover {
+        border: 2px solid #371F76;
+    }
+
+    .icon {
+        background-color: #371F76;
+        color: #FFFFFF;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 15px;
+        font-size: 30px;
+        margin: 0 auto 25px auto;
+        display: block;
+    }
+
+    .box h2 {
+        font-size: 22px;
+        color: #371F76;
+        margin: 10px 0;
+    }
+
+    .box p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #6C3A8A;
+        line-height: 1.5;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contacts {
+        padding: 80px 100px;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+
+    .contacts h3 {
+       color: #4A2166;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .contacts h1 {
+        font-size: 50px;
+        color: #371F76;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .contacts p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #6C3A8A;
+        margin-bottom: 40px;
+    }
+
+    .email-btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #371F76;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        border: 2px solid #371F76;
+        transition: 0.3s ease;
+    }
+
+    .email-btn:hover {
+        background-color: #FFFFFF;
+        color: #371F76;
+    }
+
+    footer {
+        background-color: #4A2166;
+        color: #FFFFFF;
+        padding: 30px 100px;
+    }
+
+    .footer-content {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .footer-logo {
+        float: left;
+        text-transform: uppercase;
+        font-family: 'Le Jour Serif';
+    }
+
+    .footer-logo img {
+        height: 50px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .copyright {
+        float: right;
+        line-height: 50px;
+        font-family: 'Poppins';
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="MEDIAS/logo.png" alt="JADE BIANCA">
+            <div class="logo-text">JADE BIANCA</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="blog.html">Gallery</a></li>
+            <li><a href="blog.html">Favorites</a></li>
+            <li><a href="blog.html">Goals</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h3>Welcome to my blog</h3>
+        <h1>Hi, I'm Jade Bianca!</h1>
+        <p>This is my personal space where I share my thoughts, stories, and the experiences I cherish along the way.</p>
+        <div class="hero-btn">
+            <a href="about.html" class="about-me">About Me</a>
+        </div>
+    </div>
+
+    <div class="me">
+        <div class="vid">
+            <video controls preload="metadata" poster="MEDIAS/me.jpg">
+                <source src="MEDIAS/reel.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="me-text">
+            <h3>Get To Know</h3>
+            <h1>Jade Bianca</h1>
+            <p>I am a BSIT student who has always been curious, creative, and eager to learn new things. My experiences from childhood up to college have shaped me into a motivated learner who continues to grow and improve.</p>
+            <a href="about.html" class="me-btn">Read Biography</a>
+        </div>
+    </div>
+
+    <div class="life">
+        <h3>More About Me</h3>
+        <h1>Life & Perspectives</h1>
+        <p>A collection of my experiences, interests, and future aspirations</p>
+        <div class="pages">
+            <a href="#" class="box">
+                <div class="icon"><i class="fa-solid fa-pen"></i></div>
+                <h2>My Blogs</h2>
+                <p>Personal narratives & reflections</p>
+            </a>
+            <a href="#" class="box">
+                <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+                <h2>My Photos</h2>
+                <p>Captured moments & memories</p>
+            </a>
+            <a href="#" class="box">
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                <h2>My Favorites</h2>
+                <p>Favorite tunes, movies & shows</p>
+            </a>
+            <a href="#" class="box">
+                <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h2>My Goals</h2>
+                <p>Dream places & bucket list</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <h3>Stay Connected</h3>
+        <h1>Email Me</h1>
+        <p>Have a question or just want to say hi? I'd love to hear from you!</p>
+        <a href="mailto:jadebiancaportillo@email.com" class="email-btn">Send an Email</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="MEDIAS/logo.png" alt="JADE BIANCA">
+                <strong>JADE BIANCA</strong>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Jade Bianca Portillo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
