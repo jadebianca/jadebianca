@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jade Bianca Portillo">
+    <meta http-equiv="refresh" content="1800">
+    <title>Jade Bianca</title>
+    <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: #4A2166;
+            padding: 20px 70px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            height: 58px;
+        }
+
+        .logo img {
+            height: 58px;
+            vertical-align: middle;
+        }
+
+        .logo-text {
+            font-family: 'Le Jour Serif','Playfair Display', serif;
+            font-size: 30px;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 58px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 8px 25px;
+            border-radius: 30px;
+            display: block;
+            line-height: 42px;
+            transition: 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background: #FFFFFF;
+            color: #371F76;
+        }
+
+        .hero {
+            background-image: url('../MEDIAS/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 10px 0px;
+        }
+
+        .hero-btn {
+            margin-top: 5px;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            margin: 10px;
+            background-color: #FFFFFF;
+            color: #4A2166;
+        }
+
+        .back:hover {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #371F76;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 3em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #371F76;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2em;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #371F76;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 350;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 0.9em;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #4A2166;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px; 
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 40px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .paragraph {
+            color: #4A2166;
+            margin: 0 0 50px 0;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+
+        .top {
+            text-align: right;
+            margin-bottom: 40px;
+        }
+
+        .top a {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #4A2166;
+        }
+
+        q, em {
+            font-weight: 600;
+            font-style: oblique;
+            color: #371F76;
+        }
+        
+        .list ul {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 0;
+            margin-bottom: 30px;
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        .list li {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 2;
+            text-align: justify;
+            border-bottom: 1.5px solid #E6DCF2;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #4A2166;
+            color: #FFFFFF;
+            padding: 40px 100px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            width: 49%;
+            font-family: 'Le Jour Serif', serif;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            display: inline-block;
+            float: right;
+            line-height: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+            <div class="logo-text">JADE BIANCA</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blogs</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../favorites.html">Favorites</a></li>
+            <li><a href="../goals.html">Goals</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h3>Latest Stories</h3>
+        <h1>Featured Blogs</h1>
+        <div class="hero-btn">
+        <a href="../blog.html" class="back"> &larr; Back To Blogs Page</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1 id="top" class="title">Fill Up Your Own Cup and Let Them Fall in Love With the Overflow</h1>
+        <p class="author"><b>By: Jade Bianca Portillo &bull; January 19, 2026</b></p>
+        
+        <p class="nav-bio">
+            <a href="#intro">Intro</a> &bull;
+            <a href="#body-one">Stayed Selfless</a> &bull;
+            <a href="#body-two">Peace in Solitude</a> &bull;
+            <a href="#reflection">Choosing Myself</a>
+        </p>
+        
+        <hr width="100%" size="5" color="#6C3A8A">
+
+        <article>
+          
+            <p id="intro" class="paragraph">
+            <a href="../MEDIAS/blog2.png"  target="winImage">
+                <img src="../MEDIAS/blog2.png" alt="solo-date" class="photos" title="My first solo date.">
+            </a>
+            Sometimes I feel like the world only notices what I do, not who I am. People only focus on my achievements, but rarely ask how I am really doing. As the first-born daughter in my family, I grew up carrying silent expectations. I was judged more than understood and often left out. Still, I kept asking myself: <q>If I don't choose and love myself, then who will?</q>
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>    
+
+            <h2 id="body-one">Stayed Selfless Despite Being Misunderstood </h2>
+            <p class="paragraph">
+                I was often misunderstood, yet I cared deeply for them and tried to put their needs before my own. I've experienced favoritism and spent years trying to please people just to be noticed. My feelings were often ignored and, I was once told I couldn't be tired because other had it worst. Because of this, I became afraid to open up my feelings, even to my closest friends. I always listened to them, but I feared of being a burden. I cared deeply, yet people still misunderstood me as <q>maka-sarili</q> or <q>manhid.</q> As I grew older, I realized not everyone can always be there for you and I didn’t need constant attention to feel valued.
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>  
+
+            <h2 id="body-two">Finding Peace in Solitude</h2>
+            <p class="paragraph" style="margin-bottom: 5px">
+                There were times when I put myself on <abbr title="Do Not Disturb">DND</abbr> because I needed time to be with myself and recharge. I started enjoying solo dates and felt free when I am all alone. Being away from home made me feel more at <em>peace and more like myself</em>. I even even get shy when all the attention is on me, even though I spent years craving for it. In solitude, I found healing through simple moments like: </p>
+                    <ul class="list" style=" text-indent: 2px;">
+                        <li>Walking and exploring alone</li>
+                        <li>Eating alone</li>
+                        <li>Sitting quietly with my own my thoughts </li>
+                    </ul>
+            <p class="paragraph" style="text-indent: 0px;">In those moments, I stopped begging to be chosen and began filling my own cup little by little.</p>
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>
+            
+            <h2 id="reflection">Choosing Myself Without Guilt</h2>
+            <p class="paragraph">
+                Now I understand that choosing myself is not selfish. Filling my own cup has taught me how to <em>choose and love without losing myself</em>. I no longer need to prove my worth just to be seen. The right people will naturally notice and appreciate my love, energy, and effort. This is me choosing myself and finally letting that be enough.
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+                <strong>JADE BIANCA</strong>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Jade Bianca Portillo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

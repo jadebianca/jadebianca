@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jade Bianca Portillo">
+    <meta http-equiv="refresh" content="1800">
+    <title>Jade Bianca</title>
+    <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: #4A2166;
+            padding: 20px 70px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            height: 58px;
+        }
+
+        .logo img {
+            height: 58px;
+            vertical-align: middle;
+        }
+
+        .logo-text {
+            font-family: 'Le Jour Serif','Playfair Display', serif;
+            font-size: 30px;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 58px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 8px 25px;
+            border-radius: 30px;
+            display: block;
+            line-height: 42px;
+            transition: 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background: #FFFFFF;
+            color: #371F76;
+        }
+
+        .hero {
+            background-image: url('../MEDIAS/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 10px 0px;
+        }
+
+        .hero-btn {
+            margin-top: 5px;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            margin: 10px;
+            background-color: #FFFFFF;
+            color: #4A2166;
+        }
+
+        .back:hover {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #371F76;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 3em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #371F76;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2em;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #371F76;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 350;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 0.9em;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #4A2166;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px; 
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 40px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .paragraph {
+            color: #4A2166;
+            margin: 0 0 50px 0;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+
+        .top {
+            text-align: right;
+            margin-bottom: 40px;
+        }
+
+        .top a {
+            color: #4A2166;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #4A2166;
+        }
+
+        q, em {
+            font-weight: 600;
+            font-style: oblique;
+            color: #371F76;
+        }
+
+        footer {
+            background-color: #4A2166;
+            color: #FFFFFF;
+            padding: 40px 100px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            width: 49%;
+            font-family: 'Le Jour Serif', serif;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            display: inline-block;
+            float: right;
+            line-height: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+            <div class="logo-text">JADE BIANCA</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blogs</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../favorites.html">Favorites</a></li>
+            <li><a href="../goals.html">Goals</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h3>Latest Stories</h3>
+        <h1>Featured Blogs</h1>
+        <div class="hero-btn">
+            <a href="../blog.html" class="back"> &larr; Back To Blogs Page</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1 id="top" class="title">Trusting Myself: <br>The Key To Building a Meaningful Career</h1>
+        <p class="author"><b>By: Jade Bianca Portillo &bull; January 21, 2026</b></p>
+        
+        <p class="nav-bio">
+            <a href="#intro">Intro</a> &bull;
+            <a href="#body-one">Growing and Learning</a> &bull;
+            <a href="#body-two">Overcoming Challenges</a> &bull;
+            <a href="#reflection">Having Faith in Every Step</a>
+        </p>
+        
+        <hr width="100%" size="5" color="#6C3A8A">
+
+        <article> 
+            <p id="intro" class="paragraph">
+                <a href="../MEDIAS/blog3.png"  target="winImage">
+                    <img src="../MEDIAS/blog3.png" alt="landing-page" class="photos" title="Trying to create my landing page.">
+                </a>
+                Elle Woods once said, <em><q>You must always have faith in people. And most importantly, you must always have faith in yourself.</q></em> That quote reminds me how important it is to trust myself when thinking about my career and future. To be honest, if someone asked me where would I see myself in the next five years, my mind would completly go blank. Maybe I’ll work as a web developer or a data engineer, but who knows? Life is full of surprises and focusing on the present is the best thing that I can do.
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>    
+
+            <h2 id="body-one">Growing and Learning Each Day</h2>
+            <p class="paragraph">
+                As an IT student, my main goal is to develop and improve my skills everyday. Since technology is constantly evolving, I am willing to <em>adapt, learn new things, and grow along the way</em>. I want to build something meaningful through my hard work and dedication. Instead of seeing mistakes as failures, I try to treat them as a <em>lessons</em> that will help me grow. Every small improvement matters and contributes to my progress. Currently, I focus on developing skills and confidence that will help me not only in school but also in the future. I want myself to look back and know that I gave my best and stayed true to myself.
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>  
+
+            <h2 id="body-two">Overcoming Doubts and Challenges</h2>
+            <p class="paragraph">
+                There have been times when school tested my confidence and doubted my abilities. I struggled, failed, and felt frustrated, but I never gave up. Over time, I learned to adjust and find ways to understand things on my own. Those experiences shaped how I approach my future. They taught me that <em>patience and effort</em> matter more than instant success. I’ve learned to trust that focusing on the present will naturally guide me to the right place. Looking back, I can see that every small step prepared me for bigger challenges.
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>
+            
+            <h2 id="reflection">Having Faith in Every Step</h2>
+            <p class="paragraph">
+                Overall, I realize that <em>trusting myself and staying focused on the present</em> are the keys to building a meaningful career. The future isn’t something you can fully predict, but that’s what makes it exciting. All you can really do is give everything you’ve got in the moment and hope for the best. Having faith gives me <em>confidence to explore opportunities, take risks, and keep improving.</em> With this mindset, I feel ready to create a future that feels fulfilling and true to who I am.
+            </p>
+            <p class="top"><a href="#top">Back to top</a></p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+                <strong>JADE BIANCA</strong>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Jade Bianca Portillo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
