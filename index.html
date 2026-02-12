@@ -7,25 +7,24 @@
     <title>Jade Bianca</title>
     <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <script src="https://kit.fontawesome.com/157200374b.js" crossorigin="anonymous"></script>
     <link rel="icon" href="IMAGES/icon.png" type="image/x-icon">
 <style type="text/css">
     body {
         background-color: #FFFFFF;
         font-family: 'Playfair Display', Georgia, serif;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     nav {
         background-color: #4A2166;
         padding: 20px 100px;
-        text-align: left; 
+        overflow: hidden;
     }
 
     .logo {
-        display: inline-block;
-        vertical-align: middle;
+        float: left;
         height: 58px;
     }
 
@@ -43,6 +42,7 @@
         margin-left: 15px;
         display: inline-block;
         vertical-align: middle;
+        line-height: 58px;
     }
 
     .nav-links {
@@ -50,13 +50,11 @@
         padding: 0;
         margin: 0;
         float: right;
-        line-height: 58px;
     }
 
     .nav-links li {
         display: inline-block;
         margin-left: 40px;
-        vertical-align: middle;
     }
 
     .nav-links li a {
@@ -67,8 +65,8 @@
         font-weight: 500;
         padding: 8px 30px;
         border-radius: 25px;
-        display: inline-block;
-        line-height: normal;
+        display: block;
+        line-height: 42px;
     }
 
     .nav-links li a:hover {
@@ -80,8 +78,7 @@
         background-image: url('IMAGES/hero.png');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
-        padding: 100px 100px;
+        padding: 100px 20px;
         text-align: center;
         color: #FFFFFF;
     }
@@ -89,7 +86,6 @@
     .hero h3 {
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
-        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 10px;
@@ -97,7 +93,7 @@
 
     .hero h1 {
         font-size: 60px;
-        margin: 10px 0px;
+        margin: 10px 0;
     }
 
     .hero p {
@@ -107,54 +103,31 @@
         margin: 0 auto;
         line-height: 1.6;
     }
-    
-    .hero-btn {
-        margin-top: 30px;
+
+    .about-me, .my-blog {
+        display: inline-block;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        margin: 10px;
     }
 
     .about-me {
-        display: inline-block;
-        padding: 12px 30px;
         background-color: #FFFFFF;
         color: #4A2166;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        border: 2px solid #FFFFFF;
-        border-radius: 25px;
-        margin: 0 10px;
-    }
-
-    .about-me:hover {
-        background-color: transparent;
-        color: #FFFFFF;
     }
 
     .my-blog {
-        display: inline-block;
-        padding: 12px 30px;
         color: #FFFFFF;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        border: 2px solid #FFFFFF;
-        border-radius: 25px;
-        margin: 0 10px;
-    }
-
-    .my-blog:hover {
-        background-color: #FFFFFF;
-        color: #4A2166;
     }
 
     .me {
-        background-color: #FFFFFF;
         padding: 80px 100px;
         text-align: center;
     }
@@ -177,23 +150,23 @@
         text-align: left;
     }
 
-    .me-text h3 {
+    .me h3 {
         color: #4A2166;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
-        font-weight: 400;
         text-transform: uppercase;
+        font-weight: 550;
         letter-spacing: 2px;
         margin-bottom: 10px;
     }
 
-    .me-text h1 {
+    .me h1 {
         font-size: 45px;
         color: #371F76;
         margin: 0 0 20px 0;
     }
 
-    .me-text p {
+    .me p {
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
         color: #6C3A8A;
@@ -209,149 +182,103 @@
         color: #ffffff;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        border: 2px solid #371F76;
         border-radius: 25px;
     }
 
-    .me-btn:hover {
-        background-color: #F9F7FF;
-        color: #371F76;
-    }
-
-    .blogs {
-        padding: 100px 20px;
+    .life {
+        padding: 100px 0;
         text-align: center;
         background-color: #f7f5ff;
     }
 
-    .blogs h3 {
+    .life h3 {
         color: #4A2166;
+        font-weight: 550;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
-        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-bottom: 10px;
     }
 
-    .blogs h1 {
-        font-size: 50px;
+    .life h1 {
+        font-size: 45px;
         color: #371F76;
-        margin-top: 0;
-        margin-bottom: 40px;
+        margin: 10px 0;
     }
 
-    .blog-container {
-        width: 1400px;
+    .life p {
+        font-family: 'Poppins', sans-serif;
+        color: #6C3A8A;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        width: 1200px;
         margin: 0 auto;
-        text-align: center;
     }
 
-    .blog-card {
+    .card {
         background: #FFFFFF;
-        width: 410px;
-        border-radius: 15px;
-        text-align: left;
+        width: 260px;
+        height: 280px;
+        border-radius: 20px;
         display: inline-block;
-        vertical-align: top; 
+        vertical-align: top;
         margin: 15px;
-        border: 1px solid #f0f0f0;
-        padding-bottom: 20px;
-    }
-
-    .blog-image img { 
-        width: 100%; 
-        height: 250px; 
-        border-radius: 15px 15px 0 0; 
-    }
-
-    .blog-content { 
-        padding: 5px 30px; 
-        text-align: justify;
-    }
-
-    .blog-category {
-        font-family: 'Poppins', sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        color: #4A2166;
-        text-transform: uppercase;
-    }
-    
-    .blog-content h2 {
-        font-size: 25px;
-        color: #371F76;
-        margin-top: 5px;
-        padding-bottom: 32px;
-        line-height: 1.3;
-        height: 60px; 
-    }
-
-    .blog-description {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        color: #60327a;
-        line-height: 1.6;
-        margin-bottom: 25px;
-        height: 80px;
-        overflow: hidden;
-    }
-
-    .read-more {
+        padding: 40px 20px;
         text-decoration: none;
-        color: #4A2166;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        text-transform: uppercase;
-        margin-top: 10px;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+        transition: border 0.3s ease;
     }
 
-    .blogs-btn {
-        display: inline-block;
-        margin-top: 50px;
-        padding: 12px 30px;
-        color: #371F76;
+    .card:hover {
         border: 2px solid #371F76;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        border-radius: 25px;
     }
 
-    .blogs-btn:hover {
+    .icon {
         background-color: #371F76;
         color: #FFFFFF;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 15px;
+        font-size: 30px;
+        margin: 0 auto 25px auto;
+        display: block;
     }
-    
+
+    .card h2 {
+        font-size: 22px;
+        color: #371F76;
+        margin: 10px 0;
+    }
+
+    .card p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #6C3A8A;
+        line-height: 1.5;
+        margin: 0;
+    }
+
     .contacts {
         padding: 80px 100px;
         text-align: center;
-        background-color: #FFFFFF;
     }
 
     .contacts h3 {
-       color: #4A2166;
+        color: #4A2166;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 550;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
     }
 
     .contacts h1 {
         font-size: 50px;
         color: #371F76;
-        margin-top: 0;
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
 
     .contacts p {
@@ -363,65 +290,47 @@
 
     .email-btn {
         display: inline-block;
-        padding: 12px 30px;
+        padding: 12px 35px;
         background-color: #371F76;
-        color: #ffffff;
+        color: #FFFFFF;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
         border-radius: 30px;
-        border: 2px solid #371F76;
-    }
-
-    .email-btn:hover {
-        background-color: #FFFFFF;
-        color: #371F76;
     }
 
     footer {
         background-color: #4A2166;
         color: #FFFFFF;
-        padding: 25px 100px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 14px;
-        text-align: left;
-        margin: 0 auto;
+        padding: 30px 100px;
     }
 
     .footer-content {
         width: 1200px;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .footer-logo {
-        display: inline-block;
-        width: 49%;
-        font-family: 'Le Jour Serif', serif;
-        font-size: 20px;
-        letter-spacing: 2px;
-        vertical-align: middle;
+        float: left;
         text-transform: uppercase;
+        font-family: 'Le Jour Serif';
     }
 
     .footer-logo img {
-        height: 58px;
+        height: 50px;
         vertical-align: middle;
+        margin-right: 10px;
     }
 
     .copyright {
-        display: inline-block;
         float: right;
-        text-align: right;
-        line-height: 58px; 
-        vertical-align: middle;
+        line-height: 50px;
+        font-family: 'Poppins';
+        font-size: 14px;
     }
 </style>
+</head>
 <body>
-    <!--PORTILLO, JADE BIANCA I.-->
-    <!--02/07/26-->
     <nav>
         <div class="logo">
             <img src="IMAGES/logo.png" alt="JADE BIANCA">
@@ -434,6 +343,7 @@
             <li><a href="CONTACTS/contacts.html">Contacts</a></li>
         </ul>
     </nav>
+
     <div class="hero">
         <h3>Welcome to my blog</h3>
         <h1>Hi, I'm Jade Bianca!</h1>
@@ -456,48 +366,32 @@
         </div>
     </div>
 
-    <div class="blogs">
-        <h3>Latest Stories</h3>
-        <h1>Featured Blogs</h1>
-
-        <div class="blog-container">
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="IMAGES/blog1.png" alt="cover">
-                </div>
-                <div class="blog-content">
-                    <p class="blog-category">Tech</p>
-                    <h2>My First Experience with HTML and CSS</h2>
-                    <p class="blog-description">My journey in learning HTML and CSS and how it helped me grow in confidence, creativity, and patience.</p>
-                    <a href="BLOGS/STORIES/blog1.html" class="read-more">Read More &rarr;</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="IMAGES/blog2.png" alt="cover">
-                </div>
-                <div class="blog-content">
-                    <p class="blog-category">Personal</p>
-                    <h2>Fill Up Your Own Cup and Let Them Fall in Love With the Overflow</h2>
-                    <p class="blog-description">Learning to choose myself first, healing from the past, and learning to love myself without guilt.</p>
-                    <a href="BLOGS/STORIES/blog2.html" class="read-more">Read More &rarr;</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="IMAGES/blog3.png" alt="cover">
-                </div>
-                <div class="blog-content">
-                    <p class="blog-category">Career</p>
-                    <h2>Trusting Myself: The Key To Building a Meaningful Career</h2>
-                    <p class="blog-description">Trusting myself, learning through challenges, and building a meaningful future one step at a time</p>
-                    <a href="BLOGS/STORIES/blog3.html" class="read-more">Read More &rarr;</a>
-                </div>
-            </div>  
+    <div class="life">
+        <h3>More About Me</h3>
+        <h1>Life & Perspectives</h1>
+        <p>A collection of my experiences, interests, and future aspirations</p>
+        <div class="container">
+            <a href="#" class="card">
+                <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <h2>My Blogs</h2>
+                <p>Personal narratives & reflections</p>
+            </a>
+            <a href="#" class="card">
+                <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+                <h2>My Photos</h2>
+                <p>Captured moments & memories</p>
+            </a>
+            <a href="#" class="card">
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                <h2>My Favorites</h2>
+                <p>Favorite tunes, movies & shows</p>
+            </a>
+            <a href="#" class="card">
+                <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h2>My Goals</h2>
+                <p>Dream places & bucket list</p>
+            </a>
         </div>
-        <a href="BLOGS/blog.html" class="blogs-btn">EXPLORE MORE BLOGS</a>  
     </div>
 
     <div class="contacts">
