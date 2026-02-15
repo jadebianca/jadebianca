@@ -18,7 +18,7 @@
 
         nav {
             background-color: #4A2166;
-            padding: 20px 70px;
+            padding: 25px 70px;
             overflow: hidden;
         }
 
@@ -28,13 +28,13 @@
         }
 
         .logo img {
-            height: 58px;
-            vertical-align: middle;
+        height: 58px;
+        vertical-align: middle;
         }
 
         .logo-text {
             font-family: 'Le Jour Serif','Playfair Display', serif;
-            font-size: 30px;
+            font-size: 25px;
             color: #FFFFFF;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -62,10 +62,15 @@
             font-family: 'Playfair Display', Georgia, serif;
             font-size: 20px;
             font-weight: 500;
-            padding: 8px 25px;
+            padding: 0px 25px;
             border-radius: 30px;
             display: block;
-            line-height: 42px;
+            line-height: 58px;
+        }
+
+        .nav-links li a:hover {
+            background: #FFFFFF;
+            color: #371F76;
         }
 
         .hero {
@@ -92,58 +97,132 @@
             margin: 10px 0px;
         }
 
-        .gallery {
-            padding: 80px 0;
+        .nav-bio {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .nav-bio a {
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .favorites {
+            padding: 0 30px;
             text-align: center;
             background-color: #ffffff;
-            width: 90%;
             max-width: 1300px;
             margin: 0 auto;
         }
 
-        .gallery h3 {
-            color: #4A2166;
-            font-weight: 550;
+        .tunes, .shows, .movie {
+            padding: 80px 0;
+        }
+
+        .favorites h3 {
             font-family: 'Poppins', sans-serif;
-            font-size: 18px;
+            color: #4A2166;
+            font-size: 16px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
             margin-bottom: 5px;
+            font-weight: 500;
         }
 
-        .gallery h1 {
-            font-size: 45px;
+        .favorites h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
             color: #371F76;
-            margin: 0 0 30px 0;
-        }
-        
-        .blog-link {
-            text-decoration: none;
-            color: inherit;
-            display: inline-block;
-            margin: 15px;
+            margin: 0 0 40px 0;
+            font-weight: 600;
         }
 
-        .photos {
-            width: 380px;
-            height: 450px;
+        hr {
+            width: 80%;
+            border: 0;
+            height: 1px;
+            background-color: #4A2166;
+            margin: 0 auto;
+        }
+
+        .song, .show, .movies {
+            display: inline-block;
+            width: 350px;
+            margin: 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .song img {
+            width: 350px;
+            height: 350px;
             object-fit: cover;
             border-radius: 20px;
             display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .top {
-            text-align: center;
-            padding: 40px 0;
+        .show img, .movies img {
+            width: 350px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .top a {
-            text-decoration: none;
-            color: #4A2166;
+        .details {
+            padding: 20px 5px;
+        }
+
+        .details h3 {
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
+            color: #6C3A8A;
             text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+            text-align: left;
+        }
+
+        .details h2 {
+            font-size: 25px;
+            color: #371F76;
+            margin: 0;
+        }
+
+        .details p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #6C3A8A;
+            margin: 5px 0 0 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 15px 40px;
+            background-color: #4A2166;
+            border: 2px solid #4A2166;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #371F76;
         }
 
         footer {
@@ -178,7 +257,7 @@
         }
     </style>
 </head>
-<body id="top">
+<body>
     <nav>
         <div class="logo">
             <img src="MEDIAS/logo.png" alt="JADE BIANCA">
@@ -194,10 +273,104 @@
     </nav>
 
     <div class="hero">
-        <h3>Music, Shows, &amp; Movies</h3>
+        <h3>Comfort Media</h3>
         <h1>My Favorites</h1>
+        <p class="nav-bio">
+            <a href="#tunes">Tunes</a> &bull;
+            <a href="#shows">Shows</a> &bull;
+            <a href="#movie">Movies</a>
+        </p>
     </div>
 
+    <div class="favorites">
+        <div id="tunes" class="tunes">
+            <h3>On Repeat</h3>
+            <h1>Top Tunes</h1>
+            <div class="song">
+                <img src="MEDIAS/panorama.jpg" alt="Panorama">
+                <div class="details">
+                    <h2>Panorama</h2>
+                    <p>Taeyeon &bull; K-Pop</p>
+                </div>
+            </div>
+            <div class="song">
+                <img src="MEDIAS/myway.jpg" alt="My Way">
+                <div class="details">
+                    <h2>My Way</h2>
+                    <p>Katseye &bull; Pop</p>
+                </div>
+            </div>
+            <div class="song">
+                <img src="MEDIAS/nexttoyou.jpg" alt="Next To You">
+                <div class="details">
+                    <h2>Next To You</h2>
+                    <p>Chris Brown, Justin Bieber &bull; R&B</p>
+                </div>
+            </div>
+            <br>
+            <a href="FAVORITES/beats.html" class="btn">View All Beats</a>
+        </div>
+
+        <hr>
+
+        <div id="shows" class="shows">
+            <h3>Binge Worthy</h3>
+            <h1>Favorite Shows</h1>
+            <div class="show">
+                <img src="MEDIAS/2521.jpg" alt="2521">
+                <div class="details">
+                    <h3>Coming of Age</h3>
+                    <h2>Twenty-Five Twenty-One</h2>
+                </div>
+            </div>
+            <div class="show">
+                <img src="MEDIAS/obs.jpg" alt="Our Beloved Summer">
+                <div class="details">
+                    <h3>Rom-Com</h3>
+                    <h2>Our Beloved Summer</h2>
+                </div>
+            </div>
+            <div class="show">
+                <img src="MEDIAS/tw.jpg" alt="Twinkling Watermelon">
+                <div class="details">
+                    <h3>Fantasy</h3>
+                    <h2>Twinkling Watermelon</h2>
+                </div>
+            </div>
+            <br>
+            <a href="FAVORITES/shows.html" class="btn">Explore All Shows</a>
+        </div>
+
+        <hr>
+
+        <div id="movie" class="movie">
+            <h3>Cinema Picks</h3>
+            <h1>Top Movies</h1>
+            <div class="movies">
+                <img src="MEDIAS/lu.jpg" alt="Love Untangled">
+                <div class="details">
+                    <h3>Rom-Com</h3>
+                    <h2>Love Untangled</h2>
+                </div>
+            </div>
+            <div class="movies">
+                <img src="MEDIAS/py.jpg" alt="Project Y">
+                <div class="details">
+                    <h3>Action</h3>
+                    <h2>Project Y</h2>
+                </div>
+            </div>
+            <div class="movies">
+                <img src="MEDIAS/dp.jpg" alt="Detective Pikachu">
+                <div class="details">
+                    <h3>Fantasy</h3>
+                    <h2>Detective Pikachu</h2>
+                </div>
+            </div>
+            <br>
+            <a href="FAVORITES/" class="btn">Browse All Movies</a>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-content">
