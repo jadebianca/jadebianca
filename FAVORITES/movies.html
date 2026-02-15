@@ -1,0 +1,395 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jade Bianca Portillo">
+    <meta http-equiv="refresh" content="1800">
+    <title>Jade Bianca</title>
+    <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: #4A2166;
+            padding: 25px 70px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            height: 58px;
+        }
+
+        .logo img {
+            height: 58px;
+            vertical-align: middle;
+        }
+
+        .logo-text {
+            font-family: 'Le Jour Serif','Playfair Display', serif;
+            font-size: 25px;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 58px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0px 25px;
+            border-radius: 30px;
+            display: block;
+            line-height: 58px;
+        }
+
+        .nav-links li a:hover {
+            background: #FFFFFF;
+            color: #371F76;
+        }
+
+        .hero {
+            background-image: url('../MEDIAS/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 80px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin: 5px 0px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-movie {
+            color: #ffffff;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 0.9em;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+
+        .nav-movie a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+            margin: 0 10px;
+        }
+
+        .movies {
+            padding: 0 30px;
+            text-align: center;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .genre {
+            padding: 50px 0;
+        }
+
+        .genre h1 {
+            font-size: 45px;
+            color: #371F76;
+            margin: 0 0 30px 0;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .genre h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #4A2166;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        hr {
+            width: 80%;
+            border: 0;
+            height: 2px;
+            background-color: #4A2166;
+            margin: 0 auto;
+        }
+
+        .movie-list {
+            text-align: center;
+            width: 100%;
+        }
+
+        .movie {
+            display: inline-block;
+            background: #FFFFFF;
+            width: 350px;
+            height: 835px; 
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            margin: 30px;
+            text-align: left;
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .movie img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .movie h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: #371F76;
+            margin: 0;
+            line-height: 1.5;
+            height: 62px;
+            overflow: hidden;
+        }
+
+        .details {
+            height: 50px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #6C3A8A;
+            margin: 0;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .details b {
+            font-weight: 600;
+            color: #4A2166;
+        }
+
+        .synopsis {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #6C3A8A;
+            text-align: justify;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            line-height: 1.75;
+        }
+
+        .trailer-link {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            color: #371F76;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+        }
+
+        .trailer-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #4A2166;
+            color: #FFFFFF;
+            padding: 30px 70px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer-logo {
+            float: left;
+            font-family: 'Le Jour Serif', serif;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            float: right;
+            line-height: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+            <div class="logo-text">JADE BIANCA</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blogs</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../favorites.html">Favorites</a></li>
+            <li><a href="../goals.html">Goals</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h3>Must-Watch Blockbusters</h3>
+        <h1>My Favorite Movies</h1>
+        <p class="nav-movie">
+            <a href="#coa">Coming of Age</a> &bull;
+            <a href="#fantasy">Fantasy</a> &bull;
+            <a href="#action">Action</a>
+        </p>
+    </div>
+    
+    <div class="movies">
+        <div class="genre" id="coa">
+            <h3>Youth & Discovery</h3>
+            <h1>Coming of Age</h1>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="../MEDIAS/20cg.jpg" alt="20th Century Girl">
+                    <h2>20th Century Girl</h2>
+                    <div class="details">
+                        <p><b>Director:</b> Bang Woo-ri</p>
+                        <p><b>Stars:</b> Kim Yoo-jung, Byeon Woo-seok</p>
+                    </div>
+                    <p class="synopsis">Na Bo-ra agrees to watch and learn about Baek Hyun-jin for her best friend Yeon-du. However, she falls in love with his best friend Poong Woon-ho, leading to a sweet and painful story of friendship and first love.</p>
+                    <a href="https://youtu.be/1oX9o4X1bJc?si=-XZrXR2Oo8_2_XX9" class="trailer-link">Watch Trailer &rarr;</a>
+                </div>
+                <div class="movie">
+                    <img src="../MEDIAS/lu.jpg" alt="Love Untangled">
+                    <h2>Love Untangled</h2>
+                    <div class="details">
+                        <p><b>Director:</b> Namkoong Sun</p>
+                        <p><b>Stars:</b> Gong Myung, Shin Eun-soo</p>
+                    </div>
+                    <p class="synopsis">Park Se-ri feels insecure about her curly hair and tries to change it to confess her feelings to her crush. But after getting close to a new student named Han Yun-seok, she learns to accept herself and finds true love.</p>
+                    <a href="https://youtu.be/yBUI5HEu8NQ?si=_HWz8MaG6VDGmKYb" class="trailer-link">Watch Trailer &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="genre" id="fantasy">
+            <h3>Magic & Adventure</h3>
+            <h1>Fantasy</h1>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="../MEDIAS/dp.jpg" alt="Detective Pikachu">
+                    <h2>Detective Pikachu</h2>
+                    <div class="details">
+                        <p><b>Director:</b> Rob Letterman</p>
+                        <p><b>Stars:</b> Ryan Reynolds, Justice Smith</p>
+                    </div>
+                    <p class="synopsis">Tim Goodman teams up with a clever, talking Pikachu to find his missing father. Together, they follow clues through the city, meet many Pokémon, and uncover big mysteries.</p>
+                    <a href="https://youtu.be/1roy4o4tqQM?si=B19S0HSUE67zPbMC" class="trailer-link">Watch Trailer &rarr;</a>
+                </div>
+                <div class="movie">
+                    <img src="../MEDIAS/totoro.jpg" alt="My Neighbor Totoro">
+                    <h2>My Neighbor Totoro</h2>
+                    <div class="details">
+                        <p><b>Director:</b> Hayao Miyazaki</p>
+                        <p><b>Stars:</b> Noriko Hidaka, Chika Sakamoto</p>
+                    </div>
+                    <p class="synopsis">Satsuki and Mei move to the countryside to be closer to their mother while she is recovering. There, they meet magical forest spirits, including the gentle Totoro, and have heartwarming adventures.</p>
+                    <a href="https://youtu.be/HaLISMAGdOE?si=K9I6r9Zap6e5RTpT" class="trailer-link">Watch Trailer &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="genre" id="action">
+        <h3>Adrenaline & Thrills</h3>
+        <h1>Action</h1>
+        <div class="movie-list">
+            <div class="movie">
+                <img src="../MEDIAS/py.jpg" alt="Project Y">
+                <h2>Project Y</h2>
+                <div class="details">
+                    <p><b>Director: </b>Lee Hwan</p>
+                    <p><b>Stars:</b> Han So-hee, Jeon Jong-seo</p>
+                </div>
+                <p class="synopsis">Mi Seon and Do Gyeong, who struggle to survive in Seoul’s Gangnam district, discover millions in hidden gold and dirty money and decide to risk everything for one last chance to change their lives.</p>
+                <a href="https://youtu.be/RDz-RWUcOSM?si=5V8WAmnMGJZP24mi" class="trailer-link">Watch Trailer &rarr;</a>
+            </div>
+            <div class="movie">
+                <img src="../MEDIAS/ballerina.jpg" alt="Ballerina">
+                <h2>Ballerina</h2>
+                <div class="details">
+                    <p><b>Director:</b> Lee Chung-hyun</p>
+                    <p><b>Stars:</b> Jeon Jong-seo, Kim Ji-hoon</p>
+                </div>
+                <p class="synopsis">Ok-ju seeks revenge on Choi Pro, the man who abused her best friend Min-hee and caused her death. She uses her skills to track him down takes on her friend's last wish: a satisfying revenge.</p>
+                <a href="https://youtu.be/IhXfUTGVEUI?si=DehN2IL1lNOpffrw" class="trailer-link">Watch Trailer &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+                <strong>JADE BIANCA</strong>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Jade Bianca Portillo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
