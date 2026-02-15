@@ -1,1 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jade Bianca Portillo">
+    <meta http-equiv="refresh" content="1800">
+    <title>Jade Bianca</title>
+    <link href="https://db.onlinewebfonts.com/c/0fc59c9e01146174219b63566981f325?family=Le+Jour+Serif" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            margin: 0px;
+            padding: 0px;
+        }
 
+        nav {
+            background-color: #4A2166;
+            padding: 25px 70px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            height: 58px;
+        }
+
+        .logo img {
+        height: 58px;
+        vertical-align: middle;
+        }
+
+        .logo-text {
+            font-family: 'Le Jour Serif','Playfair Display', serif;
+            font-size: 25px;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 58px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0px 25px;
+            border-radius: 30px;
+            display: block;
+            line-height: 58px;
+        }
+
+        .nav-links li a:hover {
+            background: #FFFFFF;
+            color: #371F76;
+        }
+
+        .hero {
+            background-image: url('../MEDIAS/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 10px 0px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-tunes {
+            color: #ffffff;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-tunes a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+            margin: 0 10px;
+        }
+
+        .tunes {
+            padding: 0 30px;
+            text-align: center;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .genre {
+            padding: 80px 0;
+        }
+
+        .tunes h1 {
+            font-size: 45px;
+            color: #371F76;
+            margin: 0 0 30px 0;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .tunes h3 {
+            color: #4A2166;
+            font-weight: 550;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        hr {
+            width: 80%;
+            border: 0;
+            height: 1px;
+            background-color: #4A2166;
+            margin: 0 auto;
+        }
+
+        .songs {
+            text-align: center;
+            width: 100%;
+        }
+
+        .song {
+            display: inline-block;
+            background: #FFFFFF;
+            width: 300px;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            margin: 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .song img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .song h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            color: #371F76;
+            margin: 5px 0 5px 0;
+        }
+
+        .song p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: #6C3A8A;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            height: 35px;
+        }
+
+        footer {
+            background-color: #4A2166;
+            color: #FFFFFF;
+            padding: 30px 70px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer-logo {
+            float: left;
+            font-family: 'Le Jour Serif', serif;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            float: right;
+            line-height: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+            <div class="logo-text">JADE BIANCA</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blogs</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../favorites.html">Favorites</a></li>
+            <li><a href="../goals.html">Goals</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h3>On REPEAT</h3>
+        <h1>Top Tunes</h1>
+        <p class="nav-tunes">
+            <a href="#kpop">K-pop</a> &bull;
+            <a href="#pop">Pop</a> &bull;
+            <a href="#rnb">R&B</a> &bull;
+            <a href="#opm">OPM</a>
+        </p>
+    </div>
+    
+    <div class="tunes">
+        <div class="genre" id="kpop">
+            <h3>Hallyu Wave</h3>
+            <h1>K-pop</h1>
+            <div class="songs">
+                <div class="song">
+                    <img src="../MEDIAS/panorama.jpg" alt="Panorama">
+                    <h1>Panorama</h1>
+                    <p>Taeyeon</p>
+                    <audio controls><source src="../MEDIAS/panorama.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/moonstruck.jpg" alt="Moonstruck">
+                    <h1>Moonstruck</h1>
+                    <p>Enhypen</p>
+                    <audio controls><source src="../MEDIAS/moonstruck.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/twice.jpg" alt="One In a Million">
+                    <h1>One In a Million</h1>
+                    <p>Twice</p>
+                    <audio controls><source src="../MEDIAS/twice.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="genre" id="pop">
+            <h3>Global Hits</h3>
+            <h1>Pop</h1>
+            <div class="songs">
+                <div class="song">
+                    <img src="../MEDIAS/myway.jpg" alt="My Way">
+                    <h1>My Way</h1>
+                    <p>Katseye</p>
+                    <audio controls><source src="../MEDIAS/myway.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/everseen.jpg" alt="Ever Seen">
+                    <h1>Ever Seen</h1>
+                    <p>beabadoobie</p>
+                    <audio controls><source src="../MEDIAS/everseen.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/billie.jpg" alt="L'amour de ma vie">
+                    <h1>L'amour De Ma Vie</h1>
+                    <p>Billie Eilish</p>
+                    <audio controls><source src="../MEDIAS/ldmv.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="genre" id="rnb">
+            <h3>Soulful Melodies</h3>
+            <h1>R&B</h1>
+            <div class="songs">
+                <div class="song">
+                    <img src="../MEDIAS/ydkm.jpg" alt="You Don't Know Me">
+                    <h1>You Don’t Know Me</h1>
+                    <p>Ariana Grande</p>
+                    <audio controls><source src="../MEDIAS/ydkm.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/goodthing.jpg" alt="Good Thing">
+                    <h1>Good Thing</h1>
+                    <p>Zedd, Kehlani</p>
+                    <audio controls><source src="../MEDIAS/goodthing.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/nexttoyou.jpg" alt="Next To You">
+                    <h1>Next To You</h1>
+                    <p>Chris Brown, Justin Bieber</p>
+                    <audio controls><source src="../MEDIAS/nexttoyou.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="genre" id="opm">
+            <h3>Pinoy Classics</h3>
+            <h1>OPM</h1>
+            <div class="songs">
+                <div class="song">
+                    <img src="../MEDIAS/eh.jpg" alt="With a Smile">
+                    <h1>With a Smile</h1>
+                    <p>Eraserheads</p>
+                    <audio controls><source src="../MEDIAS/was.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/ridleys.jpg" alt="Love Is">
+                    <h1>Love Is</h1>
+                    <p>The Ridleys</p>
+                    <audio controls><source src="../MEDIAS/loveis.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="../MEDIAS/coj.jpg" alt="Patutunguhan">
+                    <h1>Patutunguhan</h1>
+                    <p>Cup of Joe</p>
+                    <audio controls><source src="../MEDIAS/patutunguhan.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../MEDIAS/logo.png" alt="JADE BIANCA">
+                <strong>JADE BIANCA</strong>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Jade Bianca Portillo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
