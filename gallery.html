@@ -18,7 +18,7 @@
 
         nav {
             background-color: #4A2166;
-            padding: 20px 70px;
+            padding: 25px 70px;
             overflow: hidden;
         }
 
@@ -28,13 +28,13 @@
         }
 
         .logo img {
-            height: 58px;
-            vertical-align: middle;
+        height: 58px;
+        vertical-align: middle;
         }
 
         .logo-text {
             font-family: 'Le Jour Serif','Playfair Display', serif;
-            font-size: 30px;
+            font-size: 25px;
             color: #FFFFFF;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -62,10 +62,15 @@
             font-family: 'Playfair Display', Georgia, serif;
             font-size: 20px;
             font-weight: 500;
-            padding: 8px 25px;
+            padding: 0px 25px;
             border-radius: 30px;
             display: block;
-            line-height: 42px;
+            line-height: 58px;
+        }
+
+        .nav-links li a:hover {
+            background: #FFFFFF;
+            color: #371F76;
         }
 
         .hero {
@@ -93,7 +98,7 @@
         }
 
         
-        .nav-bio {
+        .nav-hero {
             color: #ffffff;
             font-family: Poppins, Arial, sans-serif;
             font-size: 1em;
@@ -103,7 +108,7 @@
             margin-bottom: 20px;
         }
 
-        .nav-bio a {
+        .nav-hero a {
             color: #ffffff;
             text-decoration: none;
             font-weight: 400;
@@ -133,8 +138,16 @@
             color: #371F76;
             margin: 0 0 30px 0;
         }
+
+        hr {
+            width: 80%;
+            border: 0;
+            height: 1px;
+            background-color: #4A2166;
+            margin: 0 auto;
+        }
         
-        .blog-link {
+        .pics {
             text-decoration: none;
             color: inherit;
             display: inline-block;
@@ -155,15 +168,15 @@
 
         .top {
             text-align: right;
-            padding: 40px 0;
+            padding: 40px 0 80px;
         }
 
         .top a {
             text-decoration: none;
             color: #4A2166;
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 500;
+            font-size: 16px;
             text-transform: uppercase;
         }
 
@@ -217,7 +230,7 @@
     <div class="hero">
         <h3>Captured Memories</h3>
         <h1>Photo Gallery</h1>
-        <p class="nav-bio">
+        <p class="nav-hero">
             <a href="#photos">My Photos</a> &bull;
             <a href="#blogs">Featured Blogs</a>
         </p>
@@ -227,15 +240,15 @@
         <h3 id="photos">From The Archives</h3>
         <h1>Childhood to College Years</h1>
 
-        <a href="MEDIAS/childhood.png" class="blog-link" target="winImage">
+        <a href="MEDIAS/childhood.png" class="pics" target="winImage">
             <img src="MEDIAS/childhood.png" alt="childhood" class="photos" title="My childhood photos.">
         </a>
 
-        <a href="MEDIAS/teenage.png" class="blog-link" target="winImage">
+        <a href="MEDIAS/teenage.png" class="pics" target="winImage">
             <img src="MEDIAS/teenage.png" alt="teenage" class="photos" title="Photos from my teenage years.">
         </a>
 
-        <a href="MEDIAS/college.png" class="blog-link" target="winImage">
+        <a href="MEDIAS/college.png" class="pics" target="winImage">
             <img src="MEDIAS/college.png" alt="college" class="photos" title="Photos from my college years.">
         </a>
 
@@ -243,22 +256,23 @@
             <a href="#top">Go to Top &uarr;</a>
         </div>
 
-        <h3 style="margin-top: 60px;" id="blogs">Photos From</h3>
+        <hr>
+        <h3 style="margin-top: 80px;" id="blogs">Photos From</h3>
         <h1>Featured Blogs</h1>
 
-        <a href="MEDIAS/blog1.png" class="blog-link" target="winImage">
+        <a href="MEDIAS/blog1.png" class="pics" target="winImage">
             <img src="MEDIAS/blog1.png" alt="first-website" class="photos" title="The first website I've created.">
         </a>
 
-        <a href="MEDIAS/blog2.png" class="blog-link" target="winImage">
+        <a href="MEDIAS/blog2.png" class="pics" target="winImage">
             <img src="MEDIAS/blog2.png" alt="solo-date" class="photos" title="My first solo date.">
         </a>
 
-        <a href="MEDIAS/blog3.png" class="blog-link" target="winImage">
+        <a href="MEDIAS/blog3.png" class="pics" target="winImage">
             <img src="MEDIAS/blog3.png" alt="landing-page" class="photos" title="Trying to create my landing page.">
         </a>
 
-        <div class="top">
+        <div class="top" style="padding-bottom: 0px;">
             <a href="#top">Go to Top &uarr;</a>
         </div>
     </div>
@@ -275,5 +289,4 @@
         </div>
     </footer>
 </body>
-
 </html>
