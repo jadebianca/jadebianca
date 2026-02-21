@@ -77,6 +77,7 @@
             background-image: url('MEDIAS/hero.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             padding: 100px 100px;
             text-align: center;
             color: #FFFFFF;
@@ -85,7 +86,7 @@
         .hero h3 {
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
@@ -93,19 +94,35 @@
 
         .hero h1 {
             font-size: 60px;
-            margin: 10px 0;
+            margin: 10px 0px;
         }
 
-        .gallery {
-            padding: 80px 0;
+        .nav-hero {
+            color: #ffffff;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
             text-align: center;
-            background-color: #ffffff;
-            width: 90%;
-            max-width: 1300px;
-            margin: 0 auto;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
-        .gallery h3 {
+        .nav-hero a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .goals {
+            background-color: #FFFFFF;
+            padding: 80px 0;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .image h3 {
             color: #4A2166;
             font-weight: 550;
             font-family: 'Poppins', sans-serif;
@@ -115,38 +132,41 @@
             margin-bottom: 5px;
         }
 
-        .gallery h1 {
+        .image h1 {
             font-size: 45px;
             color: #371F76;
-            margin: 0 0 30px 0;
-        }
-        
-        .blog-link {
-            text-decoration: none;
-            color: inherit;
-            display: inline-block;
-            margin: 15px;
+            margin: 0 0 40px 0;
         }
 
-        .photos {
-            width: 380px;
-            height: 450px;
-            object-fit: cover;
-            border-radius: 20px;
+        hr {
+            width: 80%;
+            border: 0;
+            max-width: 50%;
+            height: 1px;
+            background-color: #4A2166;
+            margin: 80px auto;
+        }
+        
+        #photos {
             display: block;
+            width: 1920px;
+            height: 333px;
+            max-width: 100%;
+            height: auto;
+            margin: 40px auto;
         }
 
         .top {
-            text-align: center;
-            padding: 40px 0;
+            text-align: right;
+            padding: 40px 25px 0px;
         }
 
         .top a {
             text-decoration: none;
             color: #4A2166;
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 500;
+            font-size: 16px;
             text-transform: uppercase;
         }
 
@@ -200,8 +220,41 @@
     <div class="hero">
         <h3>Dream Places &amp; Bucket List</h3>
         <h1>My Goals</h1>
+        <p class="nav-hero">
+            <a href="#childhood">Dream Places</a> &bull;
+            <a href="#teenage">Bucket List</a> &bull;
+        </p>
     </div>
 
+    <div class="goals">
+        <div class="image">
+            <h3 id="childhood">Paws of Playful Curiosity</h3>
+            <h1>Dream Places</h1>
+            <img src="MEDIAS/dreams.png" usemap="#image-map" id="photos" alt="dreams">
+            <map name="image-map">
+                <area target="" alt="South Korea" title="South Korea" href="DREAMS/sk.html" coords="175,0,226,112,348,127,262,212,282,332,177,276,67,331,89,214,2,129,121,110" shape="poly">
+                <area target="" alt="Japan" title="Japan" href="DREAMS/japan.html" coords="407,3,741,331" shape="rect">
+                <area target="" alt="USA" title="USA" href="DREAMS/usa.html" coords="959,168,166" shape="circle">
+                <area target="" alt="Paris" title="Paris" href="DREAMS/paris.html" coords="1358,39,1388,16,1428,0,1464,3,1488,13,1517,35,1534,57,1542,75,1544,105,1539,135,1528,156,1517,175,1358,331,1215,194,1186,159,1172,137,1167,108,1170,89,1178,62,1199,30,1221,13,1251,3,1280,0,1307,5,1331,16" shape="poly">
+                <area target="" alt="Switzerland" title="Switzerland" href="DREAMS/switzerland.html" coords="1752,0,1917,164,1752,329,1588,167" shape="poly">
+            </map>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
+        </div>
+
+        <hr>
+
+        <div class="image">
+            <img src="MEDIAS/bucketlist.png" usemap="#image-map" id="photos" alt="dreams">
+            <map name="image-map">
+                <area target="" alt="" title="" href="" coords="172,4,226,109,345,129,263,214,279,329,173,273,65,331,87,209,-1,126,121,112" shape="poly">
+                <area target="" alt="" title="" href="" coords="401,4,739,333" shape="rect">
+                <area target="" alt="" title="" href="" coords="958,166,166" shape="circle">
+                <area target="" alt="" title="" href="" coords="1358,42,1383,19,1402,7,1412,5,1426,2,1443,0,1468,5,1485,10,1500,22,1521,39,1533,59,1541,78,1544,100,1544,120,1533,159,1511,183,1363,332,1212,190,1182,159,1168,119,1172,73,1187,42,1209,20,1233,5,1256,-2,1285,0,1314,8,1331,19,1341,29" shape="poly">
+                <area target="" alt="" title="" href="" coords="1753,2,1916,163,1755,332,1587,164" shape="poly">
+            </map>
+        </div>
+
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -216,6 +269,3 @@
     </footer>
 </body>
 </html>
-
-
-
