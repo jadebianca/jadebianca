@@ -96,6 +96,31 @@
             margin: 10px 0;
         }
 
+        .hero-btn {
+            margin-top: 20px;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            margin: 10px;
+            background-color: #FFFFFF;
+            color: #4A2166;
+        }
+
+        .back:hover {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+
         .nav-show {
             color: #ffffff;
             font-family: Poppins, Arial, sans-serif;
@@ -164,7 +189,7 @@
             border-radius: 15px;
             border: 1px solid #f0f0f0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-            margin: 30px;
+            margin: 10px;
             text-align: left;
             vertical-align: top;
             overflow: hidden;
@@ -226,6 +251,20 @@
             border: none;
         }
 
+        .top {
+            text-align: right;
+            padding: 40px 70px 0px;
+        }
+
+        .top a {
+            text-decoration: none;
+            color: #4A2166;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
         footer {
             background-color: #4A2166;
             color: #FFFFFF;
@@ -273,7 +312,7 @@
         </ul>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id ="top">
         <h3>Binge Worthy</h3>
         <h1>My Favorite Shows</h1>
         <p class="nav-show">
@@ -281,6 +320,9 @@
             <a href="#romcom">Romantic Comedy</a> &bull;
             <a href="#fantasy">Fantasy</a>
         </p>
+        <div class="hero-btn">
+            <a href="../favorites.html" class="back"> &larr; Back To Favorites Page</a>
+        </div>
     </div>
     
     <div class="shows">
@@ -295,8 +337,8 @@
                         <p><b>Director:</b> Jung Ji-hyun</p>
                         <p><b>Stars:</b> Kim Tae-ri, Nam Joo-hyuk</p>
                     </div>
-                    <p class="synopsis">Na Hee-do transfers to a new school and eventually makes the National Fencing Team. She crosses paths with Baek Yi-jin, who took many part-time jobs and eventually become a sports reporter.</p>
-                    <iframe src="https://www.youtube.com/embed/gYp4cKumTwU" allowfullscreen></iframe>
+                        <p class="synopsis">Na Hee-do transfers to a new school and eventually makes the National Fencing Team. She crosses paths with Baek Yi-jin, who took many part-time jobs and eventually become a sports reporter.</p>
+                        <iframe src="https://www.youtube.com/embed/gYp4cKumTwU" allowfullscreen></iframe>
                 </div>
                 <div class="show">
                     <img src="../MEDIAS/bokjoo.jpg" alt="Weightlifting Fairy Kim Bok Joo">
@@ -309,35 +351,37 @@
                     <iframe src="https://www.youtube.com/embed/6t5dLenA85Y" allowfullscreen></iframe>
                 </div>
             </div>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
         </div>
 
         <hr>
 
         <div class="genre" id="romcom">
-        <h3>Romance & Laughter</h3>
-        <h1>Romantic Comedy</h1>
-        <div class="show-list">
-            <div class="show">
-                <img src="../MEDIAS/obs.jpg" alt="Our Beloved Summer">
-                <h2>Our Beloved Summer</h2>
-                <div class="details">
-                    <p><b>Director: </b>Kim Yoon-jin</p>
-                    <p><b>Stars:</b> Choi Woo-sik, Kim Da-Mi</p>
+            <h3>Romance & Laughter</h3>
+            <h1>Romantic Comedy</h1>
+            <div class="show-list">
+                <div class="show">
+                    <img src="../MEDIAS/obs.jpg" alt="Our Beloved Summer">
+                    <h2>Our Beloved Summer</h2>
+                    <div class="details">
+                        <p><b>Director: </b>Kim Yoon-jin</p>
+                        <p><b>Stars:</b> Choi Woo-sik, Kim Da-Mi</p>
+                    </div>
+                    <p class="synopsis">Choi Ung and Kook Yeon-soo broked up and promised to never meet again. Years later, the documentary they filmed in high school went viral, forcing them to reunite and confront their complicated feelings.</p>
+                    <iframe src="https://www.youtube.com/embed/wpW6aVWgvMc" allowfullscreen></iframe>
                 </div>
-                <p class="synopsis">Choi Ung and Kook Yeon-soo broked up and promised to never meet again. Years later, the documentary they filmed in high school went viral, forcing them to reunite and confront their complicated feelings.</p>
-                <iframe src="https://www.youtube.com/embed/wpW6aVWgvMc" allowfullscreen></iframe>
-            </div>
-            <div class="show">
-                <img src="../MEDIAS/ktl.jpg" alt="King The Land">
-                <h2>King The Land</h2>
-                <div class="details">
-                    <p><b>Director:</b> Im Hyun-wook</p>
-                    <p><b>Stars:</b> Lee Jun-ho, Im Yoon-ah</p>
+                <div class="show">
+                    <img src="../MEDIAS/ktl.jpg" alt="King The Land">
+                    <h2>King The Land</h2>
+                    <div class="details">
+                        <p><b>Director:</b> Im Hyun-wook</p>
+                        <p><b>Stars:</b> Lee Jun-ho, Im Yoon-ah</p>
+                    </div>
+                        <p class="synopsis">Gu Won, a cold and charismatic hotel heir, clashes with Cheon Sa-rang, a warm hotelier who is known for her irresistible smile. As they work together, their tense relationship slowly turns into a heartwarming romance.</p>
+                        <iframe src="https://www.youtube.com/embed/AGF16szMOmo" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <p class="synopsis">Gu Won, a cold and charismatic hotel heir, clashes with Cheon Sa-rang, a warm hotelier who is known for her irresistible smile. As they work together, their tense relationship slowly turns into a heartwarming romance.</p>
-                <iframe src="https://www.youtube.com/embed/AGF16szMOmo" allowfullscreen></iframe>
-            </div>
-        </div>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
         </div>
 
         <hr>
@@ -363,10 +407,11 @@
                         <p><b>Director:</b> Oh Choong-hwan</p>
                         <p><b>Stars:</b> Lee Jong-suk, Bae Suzy, Jung Hae-in</p>
                     </div>
-                    <p class="synopsis">Jung Jae-chan, Nam Hong-joo, and Han Woo-tak start having dreams that show the future after their lives cross paths. Together, they collaborate to prevent their dreams from becoming reality and to take down a corrupt lawyer.</p>
-                    <iframe src="https://www.youtube.com/embed/8_rEZV3n3mk" allowfullscreen></iframe>
+                        <p class="synopsis">Jung Jae-chan, Nam Hong-joo, and Han Woo-tak start having dreams that show the future after their lives cross paths. Together, they collaborate to prevent their dreams from becoming reality and to take down a corrupt lawyer.</p>
+                        <iframe src="https://www.youtube.com/embed/8_rEZV3n3mk" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
         </div>
     </div>
 
