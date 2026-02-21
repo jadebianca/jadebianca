@@ -103,7 +103,7 @@
             text-align: center;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .nav-tunes a {
@@ -113,6 +113,31 @@
             margin: 0 10px;
         }
 
+        .hero-btn {
+            margin-top: 20px;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            margin: 10px;
+            background-color: #FFFFFF;
+            color: #4A2166;
+        }
+
+        .back:hover {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+        
         .tunes {
             padding: 0 30px;
             text-align: center;
@@ -205,6 +230,20 @@
             height: 35px;
         }
 
+        .top {
+            text-align: right;
+            padding: 40px 70px 0px;
+        }
+
+        .top a {
+            text-decoration: none;
+            color: #4A2166;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
         footer {
             background-color: #4A2166;
             color: #FFFFFF;
@@ -251,7 +290,7 @@
             <li><a href="../goals.html">Goals</a></li>
         </ul>
     </nav>
-    <div class="hero">
+    <div class="hero" id ="top">
         <h3>On REPEAT</h3>
         <h1>My Favorite Songs</h1>
         <p class="nav-tunes">
@@ -260,6 +299,9 @@
             <a href="#rnb">R&B</a> &bull;
             <a href="#opm">OPM</a>
         </p>
+        <div class="hero-btn">
+            <a href="../favorites.html" class="back"> &larr; Back To Favorites Page</a>
+        </div>
     </div>
     
     <div class="tunes">
@@ -289,6 +331,7 @@
                     <audio controls><source src="../MEDIAS/twice.mp3" type="audio/mpeg"></audio>
                 </div>
             </div>
+        <div class="top"><a href="#top">Go to Top &uarr;</a></div>    
         </div>
 
         <hr>
@@ -319,6 +362,7 @@
                     <audio controls><source src="../MEDIAS/ldmv.mp3" type="audio/mpeg"></audio>
                 </div>
             </div>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>    
         </div>
 
         <hr>
@@ -349,6 +393,7 @@
                     <audio controls><source src="../MEDIAS/nexttoyou.mp3" type="audio/mpeg"></audio>
                 </div>
             </div>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>    
         </div>
 
         <hr>
@@ -379,7 +424,9 @@
                     <audio controls><source src="../MEDIAS/patutunguhan.mp3" type="audio/mpeg"></audio>
                 </div>
             </div>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>    
         </div>
+        
     </div>
 
     <footer>
