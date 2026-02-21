@@ -72,11 +72,12 @@
             background: #FFFFFF;
             color: #371F76;
         }
-        
+
         .hero {
             background-image: url('MEDIAS/hero.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             padding: 100px 100px;
             text-align: center;
             color: #FFFFFF;
@@ -85,7 +86,7 @@
         .hero h3 {
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
@@ -93,13 +94,14 @@
 
         .hero h1 {
             font-size: 60px;
-            margin: 10px 0;
+            margin: 10px 0px;
         }
 
+        
         .nav-hero {
             color: #ffffff;
             font-family: Poppins, Arial, sans-serif;
-            font-size: 16px;
+            font-size: 1em;
             text-align: center;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -108,7 +110,6 @@
 
         .nav-hero a {
             color: #ffffff;
-            font-size: 16px;
             text-decoration: none;
             font-weight: 400;
         }
@@ -122,20 +123,20 @@
             margin: 0 auto;
         }
 
-        .gallery h3 {
+        .image h3 {
             color: #4A2166;
             font-weight: 550;
             font-family: 'Poppins', sans-serif;
-            font-size: 16px;
+            font-size: 18px;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 5px;
         }
 
-        .gallery h1 {
-            font-size: 42px;
+        .image h1 {
+            font-size: 45px;
             color: #371F76;
-            margin: 0 0 30px 0;
+            margin: 0 0 40px 0;
         }
 
         hr {
@@ -143,31 +144,24 @@
             border: 0;
             height: 1px;
             background-color: #4A2166;
-            margin: 0 auto;
+            margin: 80px auto;
         }
         
-        .pics {
-            text-decoration: none;
-            color: inherit;
-            display: inline-block;
-            margin: 15px;
-        }
 
         .photos {
-            width: 380px;
-            height: 450px;
-            object-fit: cover;
-            border-radius: 20px;
-            display: block;
+            display: inline-block;
+            width: 30%;
+            height: auto;
+            margin: 0 1.5%;
         }
-
+        
         .photos:hover {
-            box-shadow: 0 5px 20px rgba(30, 2, 66, 0.25);
+            transform: scale(1.05);
         }
 
         .top {
             text-align: right;
-            padding: 40px 0 80px;
+            padding: 40px 25px 0px;
         }
 
         .top a {
@@ -227,52 +221,58 @@
     </nav>
 
     <div class="hero">
-        <h3>Pieces of Memories</h3>
+        <h3>Captured Memories</h3>
         <h1>Photo Gallery</h1>
         <p class="nav-hero">
-            <a href="#photos">My Photos</a> &bull;
+            <a href="#childhood">Childhood Photos</a> &bull;
+            <a href="#teenage">Teenage Years</a> &bull;
+            <a href="#college">College Years</a> &bull;
             <a href="#blogs">Featured Blogs</a>
         </p>
     </div>
 
     <div class="gallery">
-        <h3 id="photos">From The Archives</h3>
-        <h1>Childhood to College Years</h1>
-
-        <a href="MEDIAS/childhood.png" class="pics" target="winImage">
-            <img src="MEDIAS/childhood.png" alt="childhood" class="photos" title="My childhood photos.">
-        </a>
-
-        <a href="MEDIAS/teenage.png" class="pics" target="winImage">
-            <img src="MEDIAS/teenage.png" alt="teenage" class="photos" title="Photos from my teenage years.">
-        </a>
-
-        <a href="MEDIAS/college.png" class="pics" target="winImage">
-            <img src="MEDIAS/college.png" alt="college" class="photos" title="Photos from my college years.">
-        </a>
-
-        <div class="top">
-            <a href="#top">Go to Top &uarr;</a>
+        <div class="image">
+            <h3 id="childhood">Paws of Playful Curiosity</h3>
+            <h1>Childhood Photos</h1>
+            <a href="MEDIAS/childhood1.png" target="winImage"><img src="MEDIAS/childhood1.png" alt="childhood 1" class="photos" title="My 1st birthday."></a>
+            <a href="MEDIAS/childhood2.png" target="winImage"><img src="MEDIAS/childhood2.png" alt="childhood 2" class="photos" title="My 7th birthday."></a>
+            <a href="MEDIAS/childhood3.png" target="winImage"><img src="MEDIAS/childhood3.png" alt="childhood 3" class="photos" title="During my elementary years."></a>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
         </div>
 
         <hr>
-        <h3 style="margin-top: 80px;" id="blogs">Photos From</h3>
-        <h1>Featured Blogs</h1>
 
-        <a href="MEDIAS/blog1.png" class="pics" target="winImage">
-            <img src="MEDIAS/blog1.png" alt="first-website" class="photos" title="The first website I've created.">
-        </a>
+        <div class="image">
+            <h3 id="teenage">Whiskers of Discovery</h3>
+            <h1>Teenage Years</h1>
+            <a href="MEDIAS/teenage1.png" target="winImage"><img src="MEDIAS/teenage1.png" alt="teenage 1" class="photos" title="Me during my junior high school years."></a>
+            <a href="MEDIAS/teenage2.png" target="winImage"><img src="MEDIAS/teenage2.png" alt="teenage 2" class="photos" title="Me during my senior high school years."></a>
+            <a href="MEDIAS/teenage3.png" target="winImage"><img src="MEDIAS/teenage3.png" alt="teenage 3" class="photos" title="My graduation creative shot."></a> 
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
+        </div>
 
-        <a href="MEDIAS/blog2.png" class="pics" target="winImage">
-            <img src="MEDIAS/blog2.png" alt="solo-date" class="photos" title="My first solo date.">
-        </a>
+        <hr>
 
-        <a href="MEDIAS/blog3.png" class="pics" target="winImage">
-            <img src="MEDIAS/blog3.png" alt="landing-page" class="photos" title="Trying to create my landing page.">
-        </a>
+        <div class="image">
+            <h3 id="college">Leaping Towards Her Dream</h3>
+            <h1>College Years</h1>
+            <a href="MEDIAS/college1.png" target="winImage"><img src="MEDIAS/college1.png" alt="college 1" class="photos" title="In my PE uniform."></a>
+            <a href="MEDIAS/college2.png" target="winImage"><img src="MEDIAS/college2.png" alt="college 2" class="photos" title="My first award."></a>
+            <a href="MEDIAS/college3.png" target="winImage"><img src="MEDIAS/college3.png" alt="college 3" class="photos" title="In my school uniform."></a>
+            
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
+        </div>
 
-        <div class="top" style="padding-bottom: 0px;">
-            <a href="#top">Go to Top &uarr;</a>
+        <hr>
+
+        <div class="image">
+            <h3 id="blogs">Photos From</h3>
+            <h1>Featured Blogs</h1>
+            <a href="STORIES/blog1.html" target="winImage"><img src="MEDIAS/b1.png" alt="blog 1" class="photos" title="My first website."></a>
+            <a href="STORIES/blog2.html" target="winImage"><img src="MEDIAS/b2.png" alt="blog 2" class="photos" title="My first solo date."></a>
+            <a href="STORIES/blog3.html" target="winImage"><img src="MEDIAS/b3.png" alt="blog 3" class="photos" title="Creating my landing page."></a>
+            <div class="top"><a href="#top">Go to Top &uarr;</a></div>
         </div>
     </div>
 
@@ -289,9 +289,4 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
 
