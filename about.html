@@ -95,7 +95,7 @@
             font-size: 60px;
             margin: 10px 0;
         }
-        
+
         .main {
             background-color: #FFFFFF;
             padding: 30px 0;
@@ -107,7 +107,7 @@
         .title {
             color: #371F76;
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 40px;
+            font-size: 3em;
             font-weight: 700;
             text-align: center;
             margin-bottom: 10px;
@@ -116,7 +116,7 @@
         h2 {
             color: #371F76;
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 32px;
+            font-size: 2em;
             font-weight: 500;
             line-height: 1.3;
             text-align: left;
@@ -131,7 +131,7 @@
         .author {
             color: #4A2166;
             font-family: Poppins, Arial, sans-serif;
-            font-size: 18px;
+            font-size: 1.1em;
             font-weight: 350;
             text-align: center;
             letter-spacing: 2px;
@@ -142,7 +142,7 @@
         .nav-bio {
             color: #4A2166;
             font-family: Poppins, Arial, sans-serif;
-            font-size: 16px;
+            font-size: 1em;
             text-align: center;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -155,21 +155,28 @@
             font-weight: 500
         }
 
+        .image {
+            text-align: center;
+            margin: 40px 0;
+        }
+
         .photos {
-            width: 100%;
-            max-width: 1000px; 
+            display: inline-block;
+            width: 30%;
             height: auto;
-            border-radius: 20px;
-            margin: 40px 0 40px 0;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            margin: 0 1%;
+        }
+
+        .photos:hover {
+            transform: scale(1.05);
         }
         
         .paragraph {
             color: #4A2166;
             margin: 0 0 50px 0;
             font-family: Poppins, Arial, sans-serif;
-            font-size: 18px;
+            font-size: 1.2em;
             font-weight: 400;
             line-height: 1.8;
             text-align: justify;
@@ -180,13 +187,12 @@
         .top {
             text-align: right;
             margin-bottom: 40px;
-        
         }
 
         .top a {
             color: #4A2166;
             font-family: Poppins, Arial, sans-serif;
-            font-size: 15px;
+            font-size: 1em;
             font-weight: 500;
             text-transform: uppercase;
             text-decoration: none;
@@ -268,9 +274,11 @@
 
         <article>
             <h2 id="childhood">Childhood Years: Paws of Playful Curiosity</h2>
-            <a href="MEDIAS/childhood.png" target="winImage">
-                <img src="MEDIAS/childhood.png" alt="childhood" class="photos" title="My childhood photos.">
-            </a>
+            <div class="image">
+                <a href="MEDIAS/childhood1.png" target="winImage"><img src="MEDIAS/childhood1.png" alt="childhood 1" class="photos" title="My 1st birthday."></a>
+                <a href="MEDIAS/childhood2.png" target="winImage"><img src="MEDIAS/childhood2.png" alt="childhood 2" class="photos" title="My 7th birthday."></a>
+                <a href="MEDIAS/childhood3.png" target="winImage"><img src="MEDIAS/childhood3.png" alt="childhood 3" class="photos" title="During my elementary years."></a>
+            </div>
             <p class="paragraph">
                 From the very start, her life seemed like a playground full of <em>tiny adventures and endless curiosity</em>. 
                 Born on March 6, 2006, <strong>Jade Bianca Portillo</strong> was the first daughter, niece, and granddaughter in her family. 
@@ -296,10 +304,11 @@
             <p class="top"><a href="#top">Back to top &uarr;</a></p>    
 
             <h2 id="teenage">Teenage Years: Whiskers of Discovery</h2>
-            <a href="MEDIAS/teenage.png" target="winImage">
-                <img src="MEDIAS/teenage.png" alt="teenage" class="photos" title="Photos from my teenage years.">
-            </a>
-            <img >
+            <div class="image">
+                <a href="MEDIAS/teenage1.png" target="winImage"><img src="MEDIAS/teenage1.png" alt="teenage 1" class="photos" title="Me during my junior high school years."></a>
+                <a href="MEDIAS/teenage2.png" target="winImage"><img src="MEDIAS/teenage2.png" alt="teenage 2" class="photos" title="Me during my senior high school years."></a>
+                <a href="MEDIAS/teenage3.png" target="winImage"><img src="MEDIAS/teenage3.png" alt="teenage 3" class="photos" title="My graduation creative shot."></a>
+            </div>
             <p class="paragraph">
                 Her teenage years brought a new chapter of <strong>growth and self-discovery</strong>. 
                 Jade Bianca started her high school journey at <strong>Rizal Technological University</strong>, slowly uncovering more about herself. 
@@ -325,9 +334,11 @@
             <p class="top"><a href="#top">Back to top &uarr;</a></p>  
 
             <h2 id="college">College Years: Leaping Towards Her Dream</h2>
-            <a href="MEDIAS/college.png" target="winImage">
-                <img src="MEDIAS/college.png" alt="college" class="photos" title="Photos from my college years.">
-            </a>
+            <div class="image">
+                <a href="MEDIAS/college1.png" target="winImage"><img src="MEDIAS/college1.png" alt="college 1" class="photos" title="In my PE uniform."></a>
+                <a href="MEDIAS/college2.png" target="winImage"><img src="MEDIAS/college2.png" alt="college 2" class="photos" title="My first award."></a>
+                <a href="MEDIAS/college3.png" target="winImage"><img src="MEDIAS/college3.png" alt="college 3" class="photos" title="In my school uniform."></a>
+            </div>
             <p class="paragraph">
                 College opened new doors to a new world, full of <strong>challenges and opportunities</strong>. 
                 Just like a cat exploring unknown places, Jade Bianca approached this stage with the same curiosity she had since childhood. 
@@ -367,7 +378,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
